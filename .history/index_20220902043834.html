@@ -545,7 +545,6 @@
 						allowFullScreen
 						title="iframe">
 					</iframe>
-					<iframe id="invisible" name="invisible" style="display:none;"></iframe>
 				</div>
 	    		<div class="col-md-6 appointment ftco-animate">
 	    			<h3 class="mb-3">Kontaktieren Sie uns</h3>
@@ -553,9 +552,8 @@
 						  method="POST"
 						  id="myForm"
 						  name="myForm"
-						  onsubmit="handleText(this)"
+						  onsubmit="handleText()"
 						  action="https://script.google.com/macros/s/AKfycbxRRdrqMiEMA_0RlelYALh-Q8iZm0_GSdtLHw4OzOCijz6V6RQ/exec"
-						  target="invisible" 
 						>
 
 						<div class="form-elements">
@@ -568,7 +566,7 @@
 
 							<div class="d-me-flex">
 								<div class="form-group">
-									<input type="text" class="form-control" id="Telephone Number" name="Telephone Number" placeholder="Telefonnummer/e-mail">
+									<input type="text" class="form-control" id="Telephone Number" name="Telephone Number" placeholder="Telefonnummer">
 								</div>
 							</div>
 
@@ -576,7 +574,7 @@
 
 							<div Class="row">
 								<div Class="col-sm-12 form-group">
-									<button class="btn btn-default pull-right" type="submit">
+									<button class="btn btn-default pull-right" >
 										<i class="btn btn-primary py-3 px-4">Senden</i>
 									</button>
 								</div>
@@ -641,19 +639,19 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 	<script>
-		function handleText(event){
-			let form = event.target;
+		function handleText(e){
+			e.preventDefault();
+			let form = e.target;
 			let formElements = form.querySelector(".form-elements");
 			if (formElements) {
 				formElements.style.display = "none"; // hide form
 			}
-			document.getElementById("myForm").style.display="none";
+			//document.getElementById("myForm").style.display="none";
 			document.getElementById("thankyou_message").style.display="block";
 			return null;
 		}
-
 	</script>
-  <script src="form-submission-handler.js"></script>
+	<!-- <script src="form-submission-handler.js"></script> -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>

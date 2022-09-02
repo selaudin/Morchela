@@ -102,47 +102,47 @@
             <!-- Contact form -->
             <iframe id="invisible" name="invisible" style="display:none;"></iframe>
        
-            <div class="col-md-6 appointment ftco-animate">
-                <h3 class="mb-3">Kontaktieren Sie uns</h3>
-                <form class="gform pure-form pure-form-stacked"
-                    method="POST"
-                    id="myForm"
-                    name="myForm"
-                    onsubmit="handleText(this)"
-                    action="https://script.google.com/macros/s/AKfycbxRRdrqMiEMA_0RlelYALh-Q8iZm0_GSdtLHw4OzOCijz6V6RQ/exec"
-                    target="invisible" 
-                    >
+                <div class="col-md-6 appointment ftco-animate">
+                    <h3 class="mb-3">Kontaktieren Sie uns</h3>
+                    <form class="gform pure-form pure-form-stacked"
+                        method="POST"
+                        id="myForm"
+                        name="myForm"
+                        onsubmit="handleText(this)"
+                        action="https://script.google.com/macros/s/AKfycbxRRdrqMiEMA_0RlelYALh-Q8iZm0_GSdtLHw4OzOCijz6V6RQ/exec"
+                        target="invisible" 
+                        >
 
-                    <div class="form-elements">
+                        <div class="form-elements">
 
-                        <div class="d-md-flex">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="First Name, Last Name" name="First Name, Last Name" placeholder="Vorname, Nachname">
+                            <div class="d-md-flex">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="First Name, Last Name" name="First Name, Last Name" placeholder="Vorname, Nachname">
+                                </div>
+                            </div>
+
+                            <div class="d-me-flex">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Telephone Number" name="Telephone Number" placeholder="Telefonnummer">
+                                </div>
+                            </div>
+
+                            <textarea name="Message" id="Message" cols="30" rows="5" class="form-control" placeholder="Nachricht"></textarea>
+
+                            <div Class="row">
+                                <div Class="col-sm-12 form-group">
+                                    <button class="btn btn-default pull-right" type="submit">
+                                        <i class="btn btn-primary py-3 px-4">Senden</i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="d-me-flex">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="Telephone Number" name="Telephone Number" placeholder="Telefonnummer/e-mail">
+                            <div id="thankyou_message" style="display:none" class="thankyou_message">
+                                <h2><em>Vielen Dank</em> für die Kontaktaufnahme! Wir melden uns baldmöglichst!
+                                </h2>
                             </div>
-                        </div>
-
-                        <textarea name="Message" id="Message" cols="30" rows="5" class="form-control" placeholder="Nachricht"></textarea>
-
-                        <div Class="row">
-                            <div Class="col-sm-12 form-group">
-                                <button class="btn btn-default pull-right" type="submit">
-                                    <i class="btn btn-primary py-3 px-4">Senden</i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="thankyou_message" style="display:none" class="thankyou_message">
-                        <h2><em>Vielen Dank</em> für die Kontaktaufnahme! Wir melden uns baldmöglichst!
-                        </h2>
-                    </div>
-                </form>
+                    </form>
             </div>
         </div>
      </div>
@@ -226,7 +226,7 @@
     }
   </script>
 
-<script src="form-submission-handler.js"></script>
+<!-- <script src="form-submission-handler.js"></script> -->
 <script src="./script.gs"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>

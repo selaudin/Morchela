@@ -568,7 +568,7 @@
 
 							<div class="d-me-flex">
 								<div class="form-group">
-									<input type="text" class="form-control" id="Telephone Number" name="Telephone Number" placeholder="Telefonnummer/e-mail">
+									<input type="text" class="form-control" id="Telephone Number" name="Telephone Number" placeholder="Telefonnummer">
 								</div>
 							</div>
 
@@ -652,8 +652,26 @@
 			return null;
 		}
 
+
+		// function formSubmit(event) {
+		// 	var url = "https://script.google.com/macros/s/AKfycbxRRdrqMiEMA_0RlelYALh-Q8iZm0_GSdtLHw4OzOCijz6V6RQ/exec"
+		// 	var request = new XMLHttpRequest();
+		// 	request.open('POST', url, true);
+		// 	request.onload = function() { // request successful
+		// 		// we can use server response to our request now
+		// 		console.log(request.responseText);
+		// 	};
+
+		// 	request.onerror = function() {
+		// 		// request failed
+		// 	};
+
+		// 	request.send(new FormData(event.target)); // create FormData from form that triggered event
+		// 	event.preventDefault();
+		// }
+
 	</script>
-  <script src="form-submission-handler.js"></script>
+  <!-- <script src="form-submission-handler.js"></script> --> -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
